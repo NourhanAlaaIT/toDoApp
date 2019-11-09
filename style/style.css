@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: darkblue;
+    font-family: monospace;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin-top: 65px;
+}
+.container, .cardsSection {
+    width: 50%;
+    margin: 30px auto;
+}
+.formApp {
+    position: relative;
+}
+.field {
+    background: #fff;
+    width: 80%;
+    padding: 15px;
+    border: 1px solid darkblue;
+    outline: 0;
+}
+.submitBtn {
+    width: 20%;
+    border: 0;
+    background-color: darkblue;
+    color: #fff;
+    outline: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: absolute;
+}
+.toDoList {
+   
+    width: 100%;
+    float: left;
+    position: relative;
+} 
+.card {
+    background-color: #fff;
+    list-style-type: none;
+    border-radius: 5px;
+    word-wrap: break-word;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.cardTxt {
+    background: #fff;
+    margin-left: 30px;
+}
+.removeCard {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    font-size: 15px;
+    background-color: transparent;
+    padding: 7px;
+    border: 0;
+    cursor: pointer;
+    outline: 0;
+}
+
+.fa-trash-alt:hover {
+    color: red;
+}
+.check {
+    position: absolute;
+    margin: -15px 0px;
+}
+.errMsg {
+    color: red;
+    margin: 0 auto 20px;
+}
+@media(max-width: 620px){
+    .container, .cardsSection {
+        width: 70%;
+    }
+}
